@@ -1,0 +1,25 @@
+body{
+    background-image: url(images/image2.JPG);
+    background-size: auto 400%;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    padding: 10px;
+}
+td {
+    padding: 10px;
+}
+caption{
+    caption-side: bottom;
+}
+.color1{
+    background-color:thistle;
+}
+.color2{
+    background-color: lightgrey;
+}
+.color3{
+    background-color:lightcyan;
+}
