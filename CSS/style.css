@@ -1,18 +1,15 @@
+/* каждая конструкция такого вида 
+@keyframes name {
 
-@keyframes show_hero{
-    0%{
-        background-position:50% -100%;
-    }
-    100%{
-        background-position:50% 0%;
-    }
 }
+это описание анимацци, то как будет изменяться элемент по ключевым кадрам 
+*/
 @keyframes fade{
-    0%{
-        opacity:1;
+    0%{             /* от */
+        opacity:1; /* непрозрачность 100% */
     }
-    100%{
-        opacity:0;
+    100%{           /* к */
+        opacity:0; /* непрозрачность 0% */
     }
 }
 @keyframes show{
@@ -61,8 +58,9 @@ h1{
     z-index:10;
     background-color:crimson;
     font-size: 4em;
-    animation: fade 0.5s ease 3s 1 ;
-    animation-fill-mode: forwards;
+    /* сверху была описана анимация fade - в этой строке мы применяем ее к элементу. */
+    animation: fade 0.5s ease 3s 1 ; /* передаю 5 параметров. 1 - название анимации, 2 - время выполнения, 3 - функция выполнения анимации, 4 - задержка перед выполнением, 5 - количество повторений */
+    animation-fill-mode: forwards; /* этот параметр позоляет зафиксировать элемент с теми свойствами, которые он получил в ходе выполнения анимации */
 }
 body>p:nth-child(2){
     z-index:9;
